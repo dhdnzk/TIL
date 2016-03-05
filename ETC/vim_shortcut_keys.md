@@ -27,12 +27,14 @@
     : visual line 모드
 - ctrl + v
     : visual block 모드
+- ctrl + e
+    : 화면 아래로 한줄씩 이동
+- ctrl + y
+    : 화면 위로 한줄씩 이동
+- gg
+    : 파일 맨 처음으로 이동
+- shift + g 
+    : 파일 맨 끝으로 이동
 
-
-## 종료시 사용되는 키
-
-- q
-- a
-- x
-- !
-- w
+- 종료시 사용되는 키
+    : q, a, x, !, w
