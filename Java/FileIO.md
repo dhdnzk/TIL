@@ -1,4 +1,4 @@
-# 자바에서 파일입출력을 진행할때
+## 자바에서 파일입출력을 진행할때
 
 - 파일에 관련된 객체를 생성(파일명 지정)
 - 입력/출력에 관한 스트림 객체를 생성.
@@ -6,11 +6,13 @@
 - 실제 입력/출력코드는 버퍼스트림 객체를 통해서 진행.
 
 
-# Example code
+## Example code
 
+```java
 File f = new File("fileName");
 if (f.canRead()) {
     Reader read = new FileReader("filename");
     BufferedReader bReader = new BufferedReader(read);
     bReader.readLine();
 }
+```
