@@ -10,6 +10,8 @@
 
 ```java
 File f = new File("fileName");
+f.createNewFile();
+
 if (f.canRead()) {
     Reader reader = new FileReader("filename");
     BufferedReader bReader = new BufferedReader(reader);
@@ -25,6 +27,7 @@ if (f.canRead()) {
 
 ```java
 File f = new File("fileName");
+
 if (f.canWrite()) {
     Writer writer = new FileWriter("filename");
     BufferedWriter bWriter = new BufferedWriter(writer);
