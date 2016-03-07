@@ -6,13 +6,34 @@
 - 실제 입력/출력코드는 버퍼스트림 객체를 통해서 진행.
 
 
-## Example code
+## 파일 입력 Example code 
 
 ```java
 File f = new File("fileName");
 if (f.canRead()) {
-    Reader read = new FileReader("filename");
-    BufferedReader bReader = new BufferedReader(read);
+    Reader reader = new FileReader("filename");
+    BufferedReader bReader = new BufferedReader(reader);
+
     bReader.readLine();
+    
+    bReader.close();
+    reader.close();
+}
+```
+
+## 파일 출력 Example code
+
+```java
+File f = new File("fileName");
+if (f.canWrite()) {
+    Writer writer = new FileWriter("filename");
+    BufferedWriter bWriter = new BufferedWriter(writer);
+
+    bWriter.write("입력할 내용");
+    bWriter.append("입력할 내용");
+    bWriter.flush();
+
+    bWriter.close();
+    writer.close();
 }
 ```
