@@ -7,6 +7,7 @@
 
 - 접속
 - mysql -u root -p
+
 ### 모든 IP 허용
 ```
 INSERT INTO mysql.user (host,user,password) VALUES ('%','root',password('비밀번호'));
