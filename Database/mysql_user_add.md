@@ -8,27 +8,31 @@
 - 접속
 - mysql -u root -p
 
-### 모든 IP 허용
+### 모든 IP에서 접속 가능한 계정 만들기
 ```
 INSERT INTO mysql.user (host,user,password) VALUES ('%','root',password('비밀번호'));
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'%';  FLUSH PRIVILEGES;
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%';  
+FLUSH PRIVILEGES;
 ```
+- GRANT ALL PRIVILEGES ON은 뒤에 나오는 계정에 어떤 데이터베이스와 어떤 테이블에 접근할 권한을 줄 것인가를 설정하는 명령어
 - \*.\*은 각각 <데이터베이스명>.<해당 데이터베이스의 테이블명을 의미>
 - 따라서 위의 명령문을 실행하고 나면 모든 IP대역에서 접속 가능하고, 전체 디비와 테이블들에 접근 가능한 root 계정을 만들게 됨
 
-### 특정 대역 IP 허용
+### 특정 대역 IP에서 접속 가능한 계정 만들기
 ```
 INSERT INTO mysql.user (host,user,password) VALUES ('192.168.8.%','root',password('비밀번호'));
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.8.%';
 FLUSH PRIVILEGES;
 ```
 
-### 특정 IP 허용
+### 특정 IP에서만 접속 가능한 계정 만들기
 ```
 INSERT INTO mysql.user (host,user,password) VALUES ('192.168.8.123','root',password('비밀번호'));
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.8.123';
 FLUSH PRIVILEGES;
 ```
+
+### GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.8.123';
 
 ### my.cnf 파일 수정하기
 
