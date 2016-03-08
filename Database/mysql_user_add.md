@@ -45,14 +45,16 @@ FLUSH PRIVILEGES;
 bind-address = *
 ```
 
-## 복구 하기 
-- 원격을 복구 할 경우
-- 아래와 같이 파일을 my.cnf 파일을 수정 후
 
-- # Instead of skip-networking the default is now to listen only on
+## 원격 접속 권한 삭제
+###아래와 같이 파일을 /etc/mysql/my.cnf 파일을 수정
+
+```
+# Instead of skip-networking the default is now to listen only on
 # localhost which is more compatible and is not less secure.
 bind-address = 127.0.0.1
-- 그리고 다시 mysql 에 다시 접속 후 root 의 원격 권한 설정을 삭제하여 준다.
+```
+### my.cnf파일 수정 후에 mysql 에 다시 접속 후 삭제하고자 하는 계정의 원격 권한 설정을 삭제하여 준다.
 
 ```
 DELETE FROM mysql.user WHERE Host='%' AND User='root';
