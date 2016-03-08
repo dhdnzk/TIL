@@ -3,10 +3,7 @@
 - CREATE USER 'id'@'localhost' IDENTIFIED BY '암호';
 - localhost 대신에 특정 ip나, 아무곳에서나 접속하게 하려면 깡으로'%' 입력
 - '192.168.0.%' 등등..
-- '...' 따옴표 붙여줘야함
-
-- 접속
-- mysql -u root -p
+- 계정 이름을 쓸때 'username'과 같은 식으로 따옴표를 붙여줘야함
 
 ### 모든 IP에서 접속 가능한 계정 만들기
 ```
