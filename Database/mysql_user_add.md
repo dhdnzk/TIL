@@ -13,7 +13,7 @@
 INSERT INTO mysql.user (host,user,password) VALUES ('%','root',password('비밀번호'));
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%';  FLUSH PRIVILEGES;
 ```
-- *.*은 각각 <데이터베이스명>.<해당 데이터베이스의 테이블명을 의미>
+- \*.\*은 각각 <데이터베이스명>.<해당 데이터베이스의 테이블명을 의미>
 - 따라서 위의 명령문을 실행하고 나면 모든 IP대역에서 접속 가능하고, 전체 디비와 테이블들에 접근 가능한 root 계정을 만들게 됨
 
 ### 특정 대역 IP 허용
