@@ -33,8 +33,6 @@ GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.8.123';
 FLUSH PRIVILEGES;
 ```
 
-### GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.8.123';
-
 ### my.cnf 파일 수정하기
 
 - 위의 과정을 거친 뒤 /etc/mysql/my.cnf 파일을 수정하면 끝.
