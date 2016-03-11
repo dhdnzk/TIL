@@ -7,6 +7,7 @@
 - git clone /로컬저장소경로
 - git clone user@host:/원격저장소 경로
 - git add <file name>
+- git rm --cached <filename>    // 깃 add한 파일 취소하기(폴더일 경우 -r 옵션 추가)
 - git commit -m "commit message"
 - git remote add origin <원격서버 주소>
 - git remote add rename <원래 이름> <바꿀 이름>
