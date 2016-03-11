@@ -4,6 +4,7 @@
 - ctrl + d
 - &
 - jobs
+- fg %
 - kill %
 - top
 
