@@ -1,4 +1,8 @@
-## Supervised Learning algorithm
+## Supervised Learning
 
 - regression problem
 - classification problem
+
+## Unsupervised Learning
+
+- clustering
