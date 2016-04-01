@@ -62,9 +62,9 @@
 
 #### rdt3.0 : channels with errors and loss
 
-- 정상적인 경우라도, stop and wait 알고리즘을 사용하게 되면, 회선의 사용률이 많이 떨어지게 된다.
+- 정상적인 경우라도, stop and wait 알고리즘을 사용하게 되면, 회선의 사용률이 많이 떨어지게 된다... 성능 이슈 발생
 
-#### 이러한 문제를 보완하기 위해서... Pipelined protocols
+### 이러한 문제를 보완하기 위해서... Pipelined protocols
 
 - 패킷에 대한 응답을 받기 전에 미리 여러개의 data 패킷을 보냄
 - ACK packet 여러개를 받기 위한 버퍼를 마련
@@ -77,4 +77,14 @@
 - 단점 : 실제로 뒤에 도착한 패킷들도 가운데 뭐 하나만 빠지면 전부 무시하기 때문에 낭비발생 
 - Time out은 가장 오래전에 보낸 패킷을 기준으로 하나만 동작
 
+
 #### Selective Repeat
+
+- Go-back-N이 맨 앞의 패킷만 timer사용하는데 반해서, 각각의 패킷에 대해서 timer를 적용해서 처리(out of order packet을 담기 위해 buffer 마련)
+- window size는 맨 앞의 패킷을 기준으로 설정
+- window size가 정해지면, sequence number의 개수를 정할 수 있음(sender's window size + receiver's windowsize <= sequence number)
+- TCP congestion : window size를 조절해서 속도 조절
+- TCP congestion과 flow controll을 고려해서 window size를 통해 속도를 조절
+
+#### TCP sequence numbers, ACKs
+
