@@ -88,3 +88,7 @@
 
 #### TCP sequence numbers, ACKs
 
+#### TCP Congestion Control
+
+- 톱니모양으로 속도를 조절(linear한 형태로 윈도우 크기를 늘이다가, timeout이 발생하면 반으로 뚝 잘라서 조절)
+
