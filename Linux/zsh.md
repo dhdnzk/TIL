@@ -12,7 +12,9 @@ chsh -s `which zsh`
 
 #### oh-my-zsh 설치
 
-- curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+```
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+```
 
 #### theme 설정
 
