@@ -1,8 +1,10 @@
 ### ZSH 사용하기
 
-#### zsh 설치
+#### zsh 설치여부 확인
 
-- 설치 여부 확인 zsh --version
+```
+zsh --version
+```
 
 #### 기본 쉘 zsh로 변경
 
