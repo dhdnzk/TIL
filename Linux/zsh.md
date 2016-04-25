@@ -1,5 +1,9 @@
 ### ZSH 사용하기
 
+#### github link
+
+[https://github.com/dhdnzk/oh-my-zsh.git](https://github.com/dhdnzk/oh-my-zsh.git)
+
 #### zsh 설치여부 확인
 
 ```
