@@ -24,3 +24,10 @@
 
 ### Router architecture overview
 
+### IP addressing
+
+- 랜카드에(interface에) IP address를 부여
+- subnet
+- CIDR (Classless InterDomain Routing)
+- DHCP (Dynamic Host Configuration Protocol)
+
