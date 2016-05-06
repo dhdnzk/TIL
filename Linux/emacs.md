@@ -19,9 +19,26 @@
 - elisp 언어의 특징 : (함수명 매개변수1 매개변수2 ... 매개변수n)의 형식
 - 특정 모드를 실행시킨다던지 어떤 기능에 대한 단축키가 생각나지 않을때는.. 'M-x 명령이름'으로 검색하자
 
+##### Package Management
+ - install-package 를 통해서 플러그인을 설치할 경우에, 이맥스를 재시작하면 설치한 패키지를 검색해도 나오지 않는다.
+ - 이는 버그가 아니라 의도된 기능이고, ~/.spacemacs파일에서 다음 함수에 package 이름을 추가하면 이맥스롤 재시작해도 자동으로 추가가 되있음
+ 
+ - ~/.spacemacs
+ ```elisp
+ 
+ (defun dotspacemacs/layers ()
+ 
+   dotspacemacs-additional-packages '(
+                                      ;;여기에 추가!
+                                     )
+
+ )
+
+ ```
+
 #### issue
 
-- M-x package-list 에서 간단하게 플러그인 설치가 가능한데, 이맥스 종료 후에 재접속해보면 전부 사라져있음.. 
+- M-x package-list 에서 간단하게 플러그인 설치가 가능한데, 이맥스 종료 후에 재접속해보면 전부 사라져있음..(Tips의 Package MAnagement 섹션에 추가 내용 설명해둠)
 - emacs 안에서 eshell이나 ansi-term 을 실행시키고, 그 안에서 vi명령어로 파일을 열면 파일도 깨지고, 특히나 evil-mode상태라면 명령행모드로 들어갈 수가 없다!(혹시 잘못열면 C-x k 미니버퍼 kill을 통해서 나가주자)
 - emacs 안에서 tmux를 사용하고 싶은데, 실행이 안됨. 역으로 터미널 열고 tmux를 실행해서 그 안에서 emacs를 열어도 단축키가 겹쳐서 제대로 동작하지 않음..
 
