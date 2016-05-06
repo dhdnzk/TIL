@@ -43,3 +43,6 @@
 - emacs 안에서 eshell이나 ansi-term 을 실행시키고, 그 안에서 vi명령어로 파일을 열면 파일도 깨지고, 특히나 evil-mode상태라면 명령행모드로 들어갈 수가 없다!(혹시 잘못열면 C-x k 미니버퍼 kill을 통해서 나가주자)
 - emacs 안에서 tmux를 사용하고 싶은데, 실행이 안됨. 역으로 터미널 열고 tmux를 실행해서 그 안에서 emacs를 열어도 단축키가 겹쳐서 제대로 동작하지 않음..
 
+#### reference
+
+- [http://jr0cket.co.uk/2015/08/spacemacs-first-impressions-from-an-emacs-driven-developer.html](http://jr0cket.co.uk/2015/08/spacemacs-first-impressions-from-an-emacs-driven-developer.html)
