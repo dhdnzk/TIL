@@ -1,0 +1,15 @@
+<!ELEMENT DBInventory (DBName*)>
+<!ELEMENT DBName (GlobalDBName, OracleSID, DBDomain, Administrator+ DBAttributes?, Comment)>
+
+<!ELEMENT GlobalDBName  (#CDATA)>
+<!ELEMENT OracleSID     (#CDATA)>
+<!ELEMENT DBDomain      (#CDATA)>
+<!ELEMENT Administrator (#CDATA)>
+<!ELEMENT DBAttributes  EMPTY>
+<!ELEMENT Comments      (#CDATA)>
+
+<!ATTLIST Administrator EmailAlias CDATA #REQUIRED>
+<!ATTLIST Administrator Extension (6007 | 6008)>
+
+<!ATTLIST DBAttributes type (Production | Development | Testing)>
+<!ATTLIST DBAttributes Version (9i)>

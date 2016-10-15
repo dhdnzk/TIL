@@ -20,7 +20,25 @@ robot_parser.read()
 
 robot_parser.can_fetch('mycrawler', 'http://blog.daum.net') # True
 ```
+
+```python3
+# python3에서는 코드가 약간 다름!
+from urllib import robotparser
+import urllib.request as request
+
+robotparser = robotparser.RobotFileParser("http://blog.daum.net")
+
+robotparser.read()
+
+robotparser.can_fetch('mycrowler', 'http://blog.daum.net') # True
+```
+
+
 - http://blog.daum.net에서 mycrawler라는 수집기가 http://blog.daum.net에서 수집할 수 있는지 여부를 물어보는 코드
+
+
+
+
 
 #### 웹 페이지 읽어들이기
 
