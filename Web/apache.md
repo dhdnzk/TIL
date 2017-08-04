@@ -9,6 +9,7 @@ sudo apachect1 (option)
 #### 아파치 웹서버 환경설정 위치
 ``` shell
 /private/etc/apache2/
+여기서 httpd.conf 파일을 수정
 ```
 
 ### REFERENCES

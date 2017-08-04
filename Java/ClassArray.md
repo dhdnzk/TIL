@@ -12,10 +12,15 @@ TmpClass array[][] = new TmpClass[9][9];
 
 // 따라서 다음과 같은 방식으로 인스턴스를 하나씩 생성해준다.
 TmpClass array[][] = new TmpCass[9][9];
+
 for(int i = 0; i < array.length(); i ++) {
+
     for(int j = 0; j < array[i].length(); j ++) {
+
         array[i][j] = new TmpClass();
+
     }
+
 }
 
 ```
