@@ -16,10 +16,11 @@
             // 커맨드 입력후에 요구하는 비밀번호는 전체 소문자로
 
             ```
+            2번의 작업을 완료하면 google-services.json파일을 다운로드 받는데, 이를 firebase와 연동할 안드로이드 프로젝트의 app 디렉터리에 위치시킴
+            만약 firebase 설정이 바뀐다면, 다시 다운받아서 프로젝트에 입력해주어야함
+            이를 통해 프로젝트에서 firebase를 인식하고, 접근하는것이 가능해짐
 
 ### 3. Project modification
-    - 2번의 작업을 완료하면 google-services.json파일을 다운로드 받는데, 이를 firebase와 연동할 안드로이드 프로젝트의 app 디렉터리에 위치시킴
-        - firebase 설정이 바뀐다면, 다시 다운받아서 프로젝트에 입력해주어야함
     - 프로젝트 레벨의 build.gradle 파일에서 다음 내용 추가
         - buildscript > dependencies에 추가해줄 내용
             ```build.gradle
