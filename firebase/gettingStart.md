@@ -31,7 +31,7 @@
             ```build.gradle
                 apply plugin: 'com.google.gms.google-services'
             ```
-        - dependencies 안쪽에 의존성 추가(자동으로 해주겠지만, 특정 버전을 사용하고 싶다면 직접 입력해 주어야 한다)
+        - dependencies 안쪽에 사용할 의존성 라이브러리들을 추가(자동으로 해주겠지만, 특정 버전을 사용하고 싶다면 직접 입력해 주어야 한다)
             ```build.gradle
                 // 2017_09_14 현재 firebase core 최신버전: 10.2.6
                 compile 'com.google.firebase:firebase-core:10.2.6'
