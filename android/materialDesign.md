@@ -16,4 +16,6 @@
 - Picking palette from an image
 - Text scale(sp)
 - Font
-
+- Image(photography, illustration, iconography)
+- RoundedBitmapDrawable
+- Background protection(setting scrim) gradient
